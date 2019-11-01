@@ -7,10 +7,10 @@ PORT = 7			# Port to listen on (non-privileged ports are > 1023)
 #with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
 def main():
-	socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-	socket.bind((HOST, PORT))
-	socket.listen()
-	conn, addr = socket.accept()
+	s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	s.bind((HOST, PORT))
+	s.listen()
+	conn, addr = s.accept()
 	with conn:
 		print('Connected by', addr)
 		while True:
