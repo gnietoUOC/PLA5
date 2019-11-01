@@ -20,7 +20,7 @@ def main():
 				conn.sendall(data)
 #			else:
 #				break 
-
+			conn.close()
 
 if __name__ == '__main__':
 	sys.exit(main())
