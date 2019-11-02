@@ -5,8 +5,7 @@ char pwd[16];  // Password
 int status = WL_IDLE_STATUS;     
 
 // Especificamos la ubicación del servdidor ECHO
-//char host[] = "10.0.0.1";
-char host[] = "192.168.101";
+char host[] = "10.0.0.1";
 byte port = 7;
 
 WiFiClient client;
