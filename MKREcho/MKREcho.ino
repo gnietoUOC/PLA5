@@ -29,11 +29,6 @@ void setup() {
     Serial.print(".");
     status = WiFi.begin(ssid, pwd);
 
-    if (status == WL_CONNECT_FAILED || status == WL_DISCONNECTED) {
-      Serial.println("Invalid SSID or Password.");
-      readSSID(ssid,pwd);
-    }
-
     // Espero un poco antess de reintentar la conexión
     delay(5000);
   }
