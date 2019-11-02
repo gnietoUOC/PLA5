@@ -1,10 +1,10 @@
 import sys
 import socket
 
-# HOST = '10.0.0.1'	# Dirección en la que va a escuchar nuestro servidor ECHO
-HOST = ''			# Lo dejo en blanco para que escuche por cualquier adaptador 
-					# (Wifi o Ethernet)
-PORT = 7			# Puerto en el que escucha por defecto un servidor ECHO
+# HOST = '10.0.0.1' # Dirección en la que va a escuchar nuestro servidor ECHO
+HOST = ''           # Lo dejo en blanco para que escuche por cualquier adaptador 
+                    # (Wifi o Ethernet)
+PORT = 7            # Puerto en el que escucha por defecto un servidor ECHO
 
 def main():
 	''' Aplicación que recibe conexiones por el puerto 7 y responde con
