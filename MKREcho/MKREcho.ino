@@ -15,6 +15,12 @@ void setup() {
   Serial.begin(9600);
   while (!Serial);
 
+  connectWifi();
+  dumpWiFi();
+}
+
+void connectWifi() {
+  
   // Verificamos que la Ethernet está disponible.
   // En una MKR1000 nunca debería fallar.
   if (WiFi.status() == WL_NO_SHIELD) {
@@ -33,8 +39,7 @@ void setup() {
     delay(5000);
   }
   Serial.println("\nConectado.");
-
-  dumpWiFi();
+  
 }
 
 void loop() {
